@@ -1,95 +1,105 @@
-export default function DataAnalystWebsite() {
-  return (
-    <div className="min-h-screen bg-white text-gray-800 font-sans">
-      {/* Hero Section */}
-      <section className="text-center py-20 px-6 bg-gray-50">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Transition Into Data Analytics With Structure & Strategy
-        </h1>
-        <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-gray-600">
-          A practical study system designed for career shifters who want to become data analysts with clarity, consistency, and confidence.
-        </p>
-        <button className="bg-black text-white px-8 py-3 rounded-2xl shadow-lg hover:opacity-90 transition">
-          Download the Career Transition Planner
-        </button>
-      </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Analyst Career Transition</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; color: #333; background-color: #ffffff; }
+    header, section, footer { padding: 60px 20px; }
+    .container { max-width: 1000px; margin: auto; }
+    h1, h2, h3, h4 { margin-bottom: 20px; }
+    p { line-height: 1.6; color: #555; }
+    .hero { background: #f5f5f5; text-align: center; }
+    .btn { display: inline-block; padding: 12px 24px; background: #000; color: #fff; text-decoration: none; border-radius: 8px; }
+    .btn-light { background: #fff; color: #000; border: 1px solid #000; }
+    .grid { display: grid; gap: 20px; }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    .section-light { background: #f9f9f9; }
+    footer { text-align: center; font-size: 14px; color: #777; }
+  </style>
+</head>
+<body>
 
-      {/* About Section */}
-      <section className="py-16 px-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-6 text-center">About This Project</h2>
-        <p className="text-lg text-gray-600 leading-relaxed mb-4">
-          I am a Computer Science graduate with decades of professional experience, currently transitioning into Data Analytics. While learning Excel, SQL, Power BI, and Python, I realized that consistency was more important than speed.
-        </p>
-        <p className="text-lg text-gray-600 leading-relaxed">
-          So I built a structured Excel-based system to track study hours, course completion, interview preparation, and overall progress — just like a real analyst would track business metrics.
-        </p>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-16 px-6 bg-gray-50">
-        <h2 className="text-3xl font-semibold mb-12 text-center">What’s Inside the Planner</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="p-6 bg-white rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-3">Structured Study Planner</h3>
-            <p className="text-gray-600">
-              Organize your learning roadmap across Excel, SQL, Power BI, and Python with clear timelines and completion tracking.
-            </p>
-          </div>
-          <div className="p-6 bg-white rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-3">Daily Study Log</h3>
-            <p className="text-gray-600">
-              Track hours studied, topics covered, and difficulty levels to monitor consistency and improvement.
-            </p>
-          </div>
-          <div className="p-6 bg-white rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-3">Interview Prep Tracker</h3>
-            <p className="text-gray-600">
-              Practice common SQL, case study, and behavioral questions while tracking confidence growth.
-            </p>
-          </div>
-          <div className="p-6 bg-white rounded-2xl shadow">
-            <h3 className="text-xl font-semibold mb-3">Progress Dashboard</h3>
-            <p className="text-gray-600">
-              Visual KPIs, charts, and performance summaries to help you see measurable progress — just like real analytics work.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Preview Section */}
-      <section className="py-16 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-8 text-center">Learning & Career Insights</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="p-6 border rounded-2xl">
-            <h4 className="font-semibold mb-2">How to Stay Consistent Learning SQL</h4>
-            <p className="text-gray-600 text-sm">Practical strategies to avoid burnout while studying after work.</p>
-          </div>
-          <div className="p-6 border rounded-2xl">
-            <h4 className="font-semibold mb-2">Excel Skills Every Data Analyst Needs</h4>
-            <p className="text-gray-600 text-sm">The essential spreadsheet functions that build strong foundations.</p>
-          </div>
-          <div className="p-6 border rounded-2xl">
-            <h4 className="font-semibold mb-2">Career Shifting Into Tech After 40</h4>
-            <p className="text-gray-600 text-sm">Mindset and strategy for professionals transitioning into analytics.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Call to Action */}
-      <section className="text-center py-20 px-6 bg-black text-white">
-        <h2 className="text-3xl font-semibold mb-6">Build Your Data Analyst Future With Structure</h2>
-        <p className="text-lg mb-8 text-gray-300">
-          Stop studying randomly. Start tracking progress like a professional.
-        </p>
-        <button className="bg-white text-black px-8 py-3 rounded-2xl shadow hover:opacity-90 transition">
-          Get the Career Transition Planner
-        </button>
-      </section>
-
-      {/* Footer */}
-      <footer className="text-center py-8 text-gray-500 text-sm">
-        © {new Date().getFullYear()} Data Analyst Career Transition. All rights reserved.
-      </footer>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Transition Into Data Analytics With Structure & Strategy</h1>
+      <p>A practical study system designed for career shifters who want to become data analysts with clarity, consistency, and confidence.</p>
+      <a href="#product" class="btn">Download the Career Transition Planner</a>
     </div>
-  );
-}
+  </header>
+
+  <!-- About Section -->
+  <section>
+    <div class="container">
+      <h2>About This Project</h2>
+      <p>I am a Computer Science graduate with decades of professional experience, currently transitioning into Data Analytics. While learning Excel, SQL, Power BI, and Python, I realized that consistency was more important than speed.</p>
+      <p>So I built a structured Excel-based system to track study hours, course completion, interview preparation, and overall progress — just like a real analyst would track business metrics.</p>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section-light">
+    <div class="container">
+      <h2>What’s Inside the Planner</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Structured Study Planner</h3>
+          <p>Organize your learning roadmap across Excel, SQL, Power BI, and Python with clear timelines and completion tracking.</p>
+        </div>
+        <div class="card">
+          <h3>Daily Study Log</h3>
+          <p>Track hours studied, topics covered, and difficulty levels to monitor consistency and improvement.</p>
+        </div>
+        <div class="card">
+          <h3>Interview Prep Tracker</h3>
+          <p>Practice common SQL, case study, and behavioral questions while tracking confidence growth.</p>
+        </div>
+        <div class="card">
+          <h3>Progress Dashboard</h3>
+          <p>Visual KPIs, charts, and performance summaries to help you see measurable progress — just like real analytics work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section>
+    <div class="container">
+      <h2>Learning & Career Insights</h2>
+      <div class="grid grid-3">
+        <div class="card">
+          <h4>How to Stay Consistent Learning SQL</h4>
+          <p>Practical strategies to avoid burnout while studying after work.</p>
+        </div>
+        <div class="card">
+          <h4>Excel Skills Every Data Analyst Needs</h4>
+          <p>The essential spreadsheet functions that build strong foundations.</p>
+        </div>
+        <div class="card">
+          <h4>Career Shifting Into Tech After 40</h4>
+          <p>Mindset and strategy for professionals transitioning into analytics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="product" class="section-light" style="text-align:center;">
+    <div class="container">
+      <h2>Build Your Data Analyst Future With Structure</h2>
+      <p>Stop studying randomly. Start tracking progress like a professional.</p>
+      <a href="#" class="btn btn-light">Get the Career Transition Planner</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Data Analyst Career Transition. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
